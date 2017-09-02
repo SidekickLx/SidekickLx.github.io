@@ -126,12 +126,12 @@
 
     
     
-    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Anterior</a>
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-    <a href="/2017/09/01/人工智能未来是否可能取代艺术家？/" type="button" class="btn btn-default ">Próximo<i
+    <a href="/2017/09/01/人工智能未来是否可能取代艺术家？/" type="button" class="btn btn-default ">Next<i
                 class="fa fa-arrow-circle-o-right"></i></a>
     
 
@@ -144,9 +144,22 @@
 	<!-- comment -->
 	
 <section id="comment">
-    <h2 class="title">Comentários</h2>
-
-    
+    <h2 class="title">Comments</h2>
+	<div id="container"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+		var gitment = new Gitment({
+  		id: '页面 ID', // 可选。默认为 location.href
+  		owner: 'SidekickLx',
+  		repo: 'sidekicklx.github.io',
+  		oauth: {
+    			client_id: 'Sidekick',
+    			client_secret: 'lxzx1614999409',
+  			},
+		})
+		gitment.render('container')
+	</script>
 </section>
 
 
