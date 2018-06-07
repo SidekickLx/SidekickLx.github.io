@@ -163,9 +163,11 @@
 		
 			<li><a href="/tags/LSTM/">LSTM<span>1</span></a></li>
 		
-			<li><a href="/tags/OS/">OS<span>1</span></a></li>
-		
 			<li><a href="/tags/AI/">AI<span>1</span></a></li>
+		
+			<li><a href="/tags/随笔/">随笔<span>1</span></a></li>
+		
+			<li><a href="/tags/最近/">最近<span>1</span></a></li>
 		
 			<li><a href="/tags/吐槽/">吐槽<span>4</span></a></li>
 		
@@ -173,11 +175,9 @@
 		
 			<li><a href="/tags/学习/">学习<span>2</span></a></li>
 		
+			<li><a href="/tags/OS/">OS<span>1</span></a></li>
+		
 			<li><a href="/tags/神经网络/">神经网络<span>1</span></a></li>
-		
-			<li><a href="/tags/随笔/">随笔<span>1</span></a></li>
-		
-			<li><a href="/tags/最近/">最近<span>1</span></a></li>
 		
 		 
 		</ul>
@@ -185,14 +185,17 @@
 
 
 		
-			
-<div class="widget">
-	<h4>wether</h4>
-	<ul class="blogroll list-unstyled">
-	
-		<li><img src="http://wttr.in/Wuhan_tqp0_transparency=255.png"></img></li>
-	
-	</ul>
+			<div class="widget">
+	<h4>weather</h4>
+	<script>
+			$.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
+				var obj = document.getElementById("weather_img");
+				var src = "http://wttr.in/" + data.geobytescity + "_tqp0_transparency=255.png"
+				console.log(src)
+				obj.src = src;
+			});
+	</script>
+	<img id="weather_img" src=""></img>
 </div>
 
 
