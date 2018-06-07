@@ -204,23 +204,23 @@
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/正版侠/">正版侠<span>1</span></a></li>
-		
-			<li><a href="/tags/学习/">学习<span>2</span></a></li>
+			<li><a href="/tags/最近/">最近<span>1</span></a></li>
 		
 			<li><a href="/tags/LSTM/">LSTM<span>1</span></a></li>
 		
 			<li><a href="/tags/神经网络/">神经网络<span>1</span></a></li>
 		
-			<li><a href="/tags/OS/">OS<span>1</span></a></li>
-		
-			<li><a href="/tags/随笔/">随笔<span>1</span></a></li>
-		
-			<li><a href="/tags/最近/">最近<span>1</span></a></li>
+			<li><a href="/tags/AI/">AI<span>1</span></a></li>
 		
 			<li><a href="/tags/吐槽/">吐槽<span>4</span></a></li>
 		
-			<li><a href="/tags/AI/">AI<span>1</span></a></li>
+			<li><a href="/tags/学习/">学习<span>2</span></a></li>
+		
+			<li><a href="/tags/OS/">OS<span>1</span></a></li>
+		
+			<li><a href="/tags/正版侠/">正版侠<span>1</span></a></li>
+		
+			<li><a href="/tags/随笔/">随笔<span>1</span></a></li>
 		
 		 
 		</ul>
@@ -231,9 +231,9 @@
 			<div class="widget">
 	<h4>weather</h4>
 	<script>
-			$.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
+			$.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
 				var obj = document.getElementById("weather_img");
-				var src = "http://wttr.in/" + data.geobytescity + "_tqp0_transparency=255.png"
+				var src = "http://wttr.in/" + data.city + "_tqp0_transparency=255.png"
 				console.log(src)
 				obj.src = src;
 			});
